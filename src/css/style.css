@@ -76,30 +76,52 @@ header nav ul li a:hover:after {
   width: 100%;
 }
 
+header nav button {
+  display: block;
+  width: 235px;
+  height: 61px;
+  background-color: #fff;
+  border: 1px solid #5432E2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 100px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 28px;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+header nav button:hover {
+  background-color: #5432E2;
+  color: #fff;
+}
+
 @media screen and (max-width: 320px) {
   header {
+    background-color: #F8F8F8;
     height: 50px;
   }
-  header button {
-    display: block;
-    width: 235px;
-    height: 61px;
-    background-color: #fff;
-    border: 1px solid #5432E2;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    border-radius: 100px;
+  header nav {
+    padding-top: 7px;
+  }
+  header nav img {
+    width: 105px;
+    padding-left: 30px;
+  }
+  header nav button {
+    margin-right: 10px;
+    height: 35px;
+    width: 130px;
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
-    cursor: pointer;
-    line-height: 28px;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+    font-size: 12px;
+    line-height: 15px;
   }
-  header button:hover {
-    background-color: #5432E2;
-    color: #fff;
+  header ul {
+    display: none;
   }
 }
 
@@ -195,6 +217,22 @@ header nav ul li a:hover:after {
   padding-top: 10px;
 }
 
+@media screen and (max-width: 320px) {
+  .main {
+    padding-top: 44px;
+  }
+  .main-title {
+    padding: 0 22px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .main-link {
+    display: none;
+  }
+}
+
 .slider {
   margin-top: 54px;
   background-color: #F9F9F9;
@@ -253,10 +291,16 @@ header nav ul li a:hover:after {
   right: 350px;
 }
 
+@media screen and (max-width: 320px) {
+  .slider {
+    background-color: #fff;
+    margin-top: 0;
+  }
+}
+
 footer {
   background-color: #313131;
   height: 346px;
-  width: 100%;
 }
 
 .flex {
@@ -424,4 +468,10 @@ footer {
 .footer-up a span {
   text-align: center;
   padding-right: 10px;
+}
+
+@media screen and (max-width: 320px) {
+  footer {
+    height: 100%;
+  }
 }
