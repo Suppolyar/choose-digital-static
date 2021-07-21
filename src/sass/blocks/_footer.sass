@@ -1,0 +1,110 @@
+footer
+    background-color: #313131
+    height: 346px
+    width: 100%
+.flex 
+    display: flex
+.footer-icons
+    padding-top: 64px
+    padding-right: 110px
+    display: flex
+    &__item
+        padding-right: 20px
+        a           
+            svg
+                &:hover circle
+                    transition: all 0.5s ease
+                    fill: $second-color
+                &:hover path
+                    transition: all 0.5s ease
+                    fill: #fff
+                
+
+                    
+.footer-links
+    padding-top: 61px
+    padding-right: 60px
+    padding-left: 119px
+    &__item
+        display: block
+        text-decoration: none
+        color: #fff 
+        padding-bottom: 15px
+        font-weight: normal
+        font-size: 20px
+        line-height: 24px
+        opacity: 50%
+        transition: all 0.5s ease
+        &:hover
+            opacity: 100%
+
+.footer-contacts
+    color: #fff
+    padding-top: 61px
+    padding-left: 185px
+    &__phone
+        display: block
+        color: #fff
+        padding-bottom: 15px
+        text-decoration: none
+        position: relative
+        transition: all 1s
+        &::after
+            display: block
+            position: absolute
+            left: 0
+            width: 0
+            height: 2px
+            background-color: #ffffff
+            content: ""
+            transition: width 0.3s ease-out
+        &:hover:after
+            width: 55%
+    &__mail
+        display: block
+        color: #fff
+        padding-bottom: 15px
+        text-decoration: none
+        position: relative
+        transition: all 1s
+        &::after
+            display: block
+            position: absolute
+            left: 0
+            width: 0
+            height: 2px
+            background-color: #ffffff
+            content: ""
+            transition: width 0.3s ease-out
+        &:hover:after
+            width: 66%
+    &__adress
+
+.footer-logo
+    padding-left: 260px
+
+.footer-extra
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: baseline
+    padding-top: 101px
+    color: #fff 
+    a
+        color: #fff
+.footer-policy
+    opacity: 0.5
+    transition: all 0.5s ease 
+    &:hover
+        opacity: 1
+.footer-up
+    opacity: 0.5
+    transition: all 0.5s ease 
+    &:hover
+        opacity: 1
+    a
+        text-decoration: none
+        span
+            text-align: center
+            padding-right: 10px
+

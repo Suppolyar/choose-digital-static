@@ -1,0 +1,63 @@
+    
+header
+    height: 97px
+    nav
+        padding-top: 37px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        img 
+            width: 142
+            height: 25
+        ul
+            margin: 0
+            padding: 4px
+            padding-left: 200px
+            li
+                display: inline
+                margin-right: 5px
+                padding-right: 35px
+                text-decoration: none
+                a
+                    position: relative
+                    text-decoration: none
+                    color: $first-color
+                    font-family: Stem
+                    font-style: normal
+                    font-weight: 500
+                    font-size: 22px
+                    line-height: 28px
+                    transition: all 1s
+                    &:after
+                        display: block
+                        position: absolute
+                        left: 0
+                        width: 0
+                        height: 2px
+                        background-color: #000000
+                        content: ""
+                        transition: width 0.3s ease-out
+                    &:hover:after
+                        width: 100%
+                       
+        button
+            display: block
+            width: 235px
+            height: 61px
+            background-color: #fff  
+            border: 1px solid #5432E2
+            box-sizing: border-box
+            border-radius: 100px
+            font-style: normal
+            font-weight: 500
+            font-size: 22px
+            line-height: 28px
+            transition: all 0.4s ease 
+            &:hover
+                background-color: $second-color
+                color: #fff
+
+
+
+            
+            
