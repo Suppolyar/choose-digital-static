@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?=time()?>">
     <link rel="stylesheet" href="css/fonts.css">
     
 </head>
@@ -161,7 +161,7 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js?v=<?=time()?>"></script>
 
 </body>
 </html>

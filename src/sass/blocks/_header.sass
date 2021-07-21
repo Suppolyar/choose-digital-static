@@ -7,8 +7,8 @@ header
         justify-content: space-between
         align-items: center
         img 
-            width: 142
-            height: 25
+            width: 142px
+            height: 25px
         ul
             margin: 0
             padding: 4px
@@ -39,6 +39,11 @@ header
                         transition: width 0.3s ease-out
                     &:hover:after
                         width: 100%
+
+@media screen and ( max-width: 320px )
+    header
+        height: 50px
+        nav
                        
         button
             display: block
@@ -51,6 +56,7 @@ header
             font-style: normal
             font-weight: 500
             font-size: 22px
+            cursor: pointer
             line-height: 28px
             transition: all 0.4s ease 
             &:hover

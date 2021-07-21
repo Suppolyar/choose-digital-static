@@ -8,7 +8,7 @@
 
 .container {
   position: relative;
-  max-width: 950px;
+  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -30,8 +30,8 @@ header nav {
 }
 
 header nav img {
-  width: 142;
-  height: 25;
+  width: 142px;
+  height: 25px;
 }
 
 header nav ul {
@@ -76,26 +76,31 @@ header nav ul li a:hover:after {
   width: 100%;
 }
 
-header nav button {
-  display: block;
-  width: 235px;
-  height: 61px;
-  background-color: #fff;
-  border: 1px solid #5432E2;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 100px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 22px;
-  line-height: 28px;
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-}
-
-header nav button:hover {
-  background-color: #5432E2;
-  color: #fff;
+@media screen and (max-width: 320px) {
+  header {
+    height: 50px;
+  }
+  header button {
+    display: block;
+    width: 235px;
+    height: 61px;
+    background-color: #fff;
+    border: 1px solid #5432E2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border-radius: 100px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    cursor: pointer;
+    line-height: 28px;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  header button:hover {
+    background-color: #5432E2;
+    color: #fff;
+  }
 }
 
 .main {
@@ -234,6 +239,20 @@ header nav button:hover {
   padding-top: 10px;
 }
 
+.slick-next {
+  display: inline-block;
+  position: absolute;
+  bottom: -54px;
+  right: 280px;
+}
+
+.slick-prev {
+  display: inline-block;
+  position: absolute;
+  bottom: -54px;
+  right: 350px;
+}
+
 footer {
   background-color: #313131;
   height: 346px;
@@ -322,7 +341,7 @@ footer {
 }
 
 .footer-contacts__phone:hover:after {
-  width: 55%;
+  width: 100%;
 }
 
 .footer-contacts__mail {
@@ -348,11 +367,12 @@ footer {
 }
 
 .footer-contacts__mail:hover:after {
-  width: 66%;
+  width: 100%;
 }
 
 .footer-logo {
   padding-left: 260px;
+  padding-top: 60px;
 }
 
 .footer-extra {
