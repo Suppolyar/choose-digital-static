@@ -231,8 +231,8 @@ header nav button:hover {
 }
 
 .main-link:hover {
-  -webkit-transform: translateX(10px);
-          transform: translateX(10px);
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .main-link a {
@@ -315,69 +315,68 @@ header nav button:hover {
   }
 }
 
-.slider {
-  margin-top: 54px;
-  background-color: #F9F9F9;
-  width: 100%;
-  height: 860px;
+.owl-carousel {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 50px;
+  background-color: #f9f9f9;
 }
 
-.card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 56px;
-  padding-right: 76px;
-  padding-left: 76px;
+.owl-nav {
+  display: block;
+  padding-top: 54px;
+  padding-bottom: 60px;
+  padding-left: 1450px;
 }
 
-.card-item {
+.owl-prev {
+  margin-right: 40px;
+}
+
+.disabled {
+  opacity: 0.5;
+}
+
+.carousel-card {
   width: 423px;
+  height: 644px;
+  margin-right: 75px;
+  margin-left: 75px;
+}
+
+.carousel-card .carousel-wrapper {
+  max-width: 423px;
   height: 521px;
-  position: relative;
+  padding: 40px;
   background: radial-gradient(50% 50% at 50% 50%, #F7FFFE 0%, #DAF7F0 100%);
 }
 
-.card-item img {
-  position: absolute;
-  padding: 40px;
+.carousel-card .carousel-wrapper__lightblue {
+  background: radial-gradient(50% 50% at 50% 50%, #F1F8FF 0%, #DDF1FF 100%);
 }
 
-.card-title {
+.carousel-card .carousel-photo img {
+  max-width: 341px;
+  height: 440px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.carousel-card .carousel-title {
   font-style: normal;
+  padding-top: 16px;
   font-weight: 500;
   font-size: 32px;
   line-height: 41px;
-  padding-top: 16px;
 }
 
-.card-subtitle {
+.carousel-card .carousel-subtitle {
+  max-width: 400px;
+  padding-top: 10px;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 28px;
-  padding-top: 10px;
-}
-
-.slick-next {
-  display: inline-block;
-  position: absolute;
-  bottom: -54px;
-  right: 280px;
-}
-
-.slick-prev {
-  display: inline-block;
-  position: absolute;
-  bottom: -54px;
-  right: 350px;
-}
-
-@media screen and (max-width: 320px) {
-  .slider {
-    background-color: #fff;
-    margin-top: 0;
-  }
 }
 
 footer {
