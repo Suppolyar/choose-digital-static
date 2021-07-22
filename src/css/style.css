@@ -394,9 +394,9 @@ footer a {
 }
 
 .footer-grid__logo {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   padding-left: 250px;
 }
 
